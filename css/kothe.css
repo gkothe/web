@@ -126,3 +126,29 @@ h1 {
   content: "";
   top: 5px;
 }
+
+.heightgmob{
+  max-height: 400px;
+  width: auto !important;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.owl-stage-outer{
+border-radius: 20px
+  
+}
+.owl-carousel{
+  border-radius: 20px
+    
+  }
+.casher{
+  padding-top: 10px;
+  background-image: url("../img/fundo_qrcode.png");
+}
+
+.kafer{
+  padding-top: 10px;
+  background-color: #FCFCFC
+}
+
