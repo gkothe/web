@@ -68,7 +68,8 @@ h1 {
   list-style: none;
   text-align: left;
   font-weight: 100;
-  max-width: 60%;
+  /* max-width: 60%; */
+  margin-left: 150px;
 
   font-family: 'Varela Round', sans-serif;
   font-size: 16px;
