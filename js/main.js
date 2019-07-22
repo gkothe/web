@@ -173,7 +173,22 @@ function changeLanguage() {
 		$(".english_i").hide();
 	} 
 }
+Professional
 
+function downloadCur(){
+
+
+	if (idioma == "E") {
+		window.open('curriculos/cv_2019_tempalte_en.pdf');  
+	} else if (idioma == "P") {
+		window.open('curriculos/cv_2019_tempalte_pt.pdf');  
+	} 
+
+
+	
+
+
+}
 // function teste(){
 
 // 	var cont = 1;
