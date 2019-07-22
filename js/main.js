@@ -166,7 +166,7 @@ function changeLanguage() {
 	idioma = idioma == "P" ? "E" : "P";
 
 	if (idioma == "E") {
-		$(".brazil_i").hide();
+		$(".brazil_i").hide(); 
 		$(".english_i").show();
 	} else if (idioma == "P") {
 		$(".brazil_i").show();
@@ -178,9 +178,9 @@ function downloadCur(){
 
 
 	if (idioma == "E") {
-		window.open('curriculos/cv_2019_tempalte_en.pdf');  
+		window.open('curriculos/cv_gabriel_kothe_en.pdf');  
 	} else if (idioma == "P") {
-		window.open('curriculos/cv_2019_tempalte_pt.pdf');  
+		window.open('curriculos/cv_gabriel_kothe_pt.pdf');  
 	} 
 
 
