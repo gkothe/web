@@ -173,7 +173,6 @@ function changeLanguage() {
 		$(".english_i").hide();
 	} 
 }
-Professional
 
 function downloadCur(){
 
