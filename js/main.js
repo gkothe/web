@@ -1,17 +1,31 @@
 function init() {
-
-	///////////////////////////
-	// Preloader
 	$(window).on('load', function () {
 		$("#preloader").delay(600).fadeOut();
 	});
 
-	///////////////////////////
-	// Scrollspy
+	$(window).on('scroll', function () {
+		var wScroll = $(this).scrollTop();
+
+		// Fixed nav
+		wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
+
+		// Back To Top Appear
+		wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
+	});
+
 	$('body').scrollspy({
 		target: '#nav',
 		offset: $(window).height() / 2
 	});
+
+
+/*
+	///////////////////////////
+	// Preloader
+	
+
+	///////////////////////////
+	// Scrollspy
 
 	///////////////////////////
 	// Smooth scroll
@@ -43,15 +57,7 @@ function init() {
 
 	///////////////////////////
 	// On Scroll
-	$(window).on('scroll', function () {
-		var wScroll = $(this).scrollTop();
 
-		// Fixed nav
-		wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
-
-		// Back To Top Appear
-		wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
-	});
 
 	///////////////////////////
 	// magnificPopup
@@ -59,7 +65,7 @@ function init() {
 		delegate: '.lightbox',
 		type: 'image'
 	});
-
+*/
 	///////////////////////////
 	// Owl Carousel
 	$('#tragoweb-slider').owlCarousel({
