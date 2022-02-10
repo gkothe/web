@@ -19,53 +19,53 @@ function init() {
 	});
 
 
-/*
-	///////////////////////////
-	// Preloader
+	/*
+		///////////////////////////
+		// Preloader
+		
 	
-
-	///////////////////////////
-	// Scrollspy
-
-	///////////////////////////
-	// Smooth scroll
-	$("#nav .main-nav a[href^='#']").on('click', function (e) {
-		e.preventDefault();
-		var hash = this.hash;
-		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top
-		}, 600);
-	});
-
-	$('#back-to-top').on('click', function () {
-		$('body,html').animate({
-			scrollTop: 0
-		}, 600);
-	});
-
-	///////////////////////////
-	// Btn nav collapse
-	$('#nav .nav-collapse').on('click', function () {
-		$('#nav').toggleClass('open');
-	});
-
-	///////////////////////////
-	// Mobile dropdown
-	$('.has-dropdown a').on('click', function () {
-		$(this).parent().toggleClass('open-drop');
-	});
-
-	///////////////////////////
-	// On Scroll
-
-
-	///////////////////////////
-	// magnificPopup
-	$('.work').magnificPopup({
-		delegate: '.lightbox',
-		type: 'image'
-	});
-*/
+		///////////////////////////
+		// Scrollspy
+	
+		///////////////////////////
+		// Smooth scroll
+		$("#nav .main-nav a[href^='#']").on('click', function (e) {
+			e.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(this.hash).offset().top
+			}, 600);
+		});
+	
+		$('#back-to-top').on('click', function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 600);
+		});
+	
+		///////////////////////////
+		// Btn nav collapse
+		$('#nav .nav-collapse').on('click', function () {
+			$('#nav').toggleClass('open');
+		});
+	
+		///////////////////////////
+		// Mobile dropdown
+		$('.has-dropdown a').on('click', function () {
+			$(this).parent().toggleClass('open-drop');
+		});
+	
+		///////////////////////////
+		// On Scroll
+	
+	
+		///////////////////////////
+		// magnificPopup
+		$('.work').magnificPopup({
+			delegate: '.lightbox',
+			type: 'image'
+		});
+	*/
 	///////////////////////////
 	// Owl Carousel
 	$('#tragoweb-slider').owlCarousel({
@@ -151,6 +151,18 @@ function init() {
 
 	});
 
+	$('#lambreta-slider').owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 15,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+		dots: true,
+		autoplay: true,
+		animateOut: 'fadeOut',
+
+	});
+
 
 	$('#testimonial-slider').owlCarousel({
 		loop: true,
@@ -169,6 +181,14 @@ function init() {
 	});
 
 
+	$(".heightgmob").click(function (event) {
+		window.open($(this).attr('src'), '_blank').focus();
+		
+	})
+
+
+
+
 
 }
 
@@ -180,29 +200,29 @@ $(document).ready(function () {
 
 
 function changeLanguage() {
-	
+
 	idioma = idioma == "P" ? "E" : "P";
 
 	if (idioma == "E") {
-		$(".brazil_i").hide(); 
+		$(".brazil_i").hide();
 		$(".english_i").show();
 	} else if (idioma == "P") {
 		$(".brazil_i").show();
 		$(".english_i").hide();
-	} 
+	}
 }
 
-function downloadCur(){
+function downloadCur() {
 
 
 	if (idioma == "E") {
-		window.open('curriculos/cv_gabriel_kothe_en.pdf');  
+		window.open('curriculos/cv_gabriel_kothe_en.pdf');
 	} else if (idioma == "P") {
-		window.open('curriculos/cv_gabriel_kothe_pt.pdf');  
-	} 
+		window.open('curriculos/cv_gabriel_kothe_pt.pdf');
+	}
 
 
-	
+
 
 
 }
